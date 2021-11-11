@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    padding: 0 50px;
+    background-image: url('./games/saper/util/wood1.jpg');
+    font-family: 'Rye', cursive;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer !important;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.link:hover {
+    box-shadow: 0 0 20px white inset;
+}
+
+.singleRow {
+    display: flex;
+    justify-content: center;
+}
+
+.singleBlock,
+.cell_component {
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(3, 245, 184);
+    color: rgb(29, 199, 211);
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+.cell_component:hover {
+    opacity: 0.85;
+}
+
+.saper_index {
+    height: calc(100% - 70px);
+    background-image: url('../src/games/saper/util/mars_background.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 2px 2px black, 2px 0 2px black, 2px 2px 2px black, 0 0 2px black;
+    color: white;
+}
+
+.saper {
+    position: relative;
+}
+
+.saper_text {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.saper_text_under {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.saper_header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.bomb {
+    background-image: url('./games/saper/util/Nuclear-Bomb.jpg');
+    background-size: cover;
+    color: transparent !important;
+    text-shadow: none;
+}
+
+.modal {
+    position: absolute;
+    height: calc(100% - 100px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    background-image: url('./games/saper/util/Nuclear-Bomb.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+    font-size: 85%;
+}
+
+.win {
+    background-image: url('./games/saper/util/success-baby.jpg') !important;
+    background-position: bottom;
+}
+
+.tryAgain {
+    margin: 10% auto;
+    padding: 10px;
+    font-size: 16px;
+    background-color: black;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    color: inherit;
+}
+
+.tryAgain:hover {
+    transform: translateY(4px);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: calc(100% - 70px);
+    background: linear-gradient(to left, #fff, #aaa);
+    font-family: 'Holtwood One SC', serif;
+    letter-spacing: 1px;
+}
